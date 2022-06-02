@@ -10,11 +10,48 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Shopping Cart</title>
   <link rel="stylesheet" href="style.css">
-  
+  <!-- Bootstrap -->
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-  <h1>Shopping Cart</h1>
 
-  <script src="app.js"></script>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light container">
+    <div class="container-fluid">      
+      <a class="navbar-brand" href="#"><img class="logo" src="img/toosh_logo.png" alt="brand-logo"><span> toosh</span> 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>            
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active px-lg-3" aria-current="page" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>          
+        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+        <li class="nav-item"><a class="nav-link last-menu-item" href="#">Testimonials</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->  
+  <section class="fh p-0 v-center bg-img img-bottom overflow-visible">
+    <div class="card text-white hero-wrapper">
+      <img src="img/hero.jpg" class="card-img my-3 p-lg-5" alt="female-models">
+      <div class="card-img-overlay ms-5">
+        <h1 class="card-title mt-lg-5 ms-5">Glam it up</h1>
+        <p class="card-text hero-text w-auto ms-5">Update your look with our trending collections.</p>
+        <a href="#" class="bg-transparent btn-outline-light btn ms-5 py-2 px-lg-5 rounded-5 border-1">Shop Now</a>
+      </div>
+    </div>    
+  </section>
+
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="app.js"></script>
 </body>
 </html>

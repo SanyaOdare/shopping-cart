@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --gold-300: #d2ae6d;
+  --pink-200: #FFE4EC;
+}
 
 * {
   margin: 0;
@@ -7,5 +12,126 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.logo {
+  width: 2rem;
+}
+
+a.active {
+  color: var(--gold-300) !important;
+}
+
+/* Hero Section */
+div.hero-wrapper {
+  background-color: var(--pink-200);
+  border: none;
+  position: relative;
+}
+
+div.bg-dark {
+  border-radius: 0;
+}
+
+div.card-img-overlay {
+  /* border: 1px solid red; */
+  border-radius: 0;
+  width: 95%;
+  height: 75%;
+  padding: 0 !important;
+  position: absolute;
+  top: 15%;
+}
+
+h1.card-title {
+  font-size: 8rem;
+  font-weight: 100;  
+}
+
+p.hero-text {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+a.bg-transparent:hover {
+  border: 3px solid var(--pink-200);
+  color: var(--pink-200);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1130px) {
+  h1.card-title {
+    font-size: 6rem;
+    margin-top: 35px;
+  }
+
+  p.hero-text {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+
+  a.bg-transparent:hover {
+    border: 2px solid var(--pink-200);
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 995px) {
+  h1.card-title {
+    font-size: 4rem;
+    margin-top: 35px;
+  }
+
+  p.hero-text {
+    font-size: 1.2rem;
+  }
+
+  a.bg-transparent {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 7px 45px;
+  }
+}
+
+@media (max-width: 780px) {
+
+  div.card-img-overlay {
+    height: 80%;
+    margin: 0px 0px 0px 20px;
+    padding: 10px;
+    position: absolute;
+    top: 12%;
+    text-align: left;
+  }
+
+  h1.card-title {
+    font-size: 2.6rem;
+    margin: 25px 0 15px 10px !important;
+  }  
+
+  p.hero-text {
+    font-size: 1rem;
+    margin-left: 10px !important;
+  }
+
+  a.bg-transparent {
+    margin-left: 10px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  h1.card-title {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 45px 0px 0px 10px !important;
+  } 
+
+  a.bg-transparent {
+    font-size: .8rem;
+    margin-bottom: 20px;
+    padding: 7px 30px;
+  }
 }
